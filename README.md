@@ -1,6 +1,6 @@
 ## Sobre o projeto
 
-Esta API, desenvolvida utilizando **.NET 8**, adota os princípios de **Domain-Driven Design (DDD)** para oferecer uma solução estruturada e eficaz no gerenciamento de despesas pessoais. O principal objetivo é permitir que os usuários registrem suas despesas, detalhando informações como título, data e hora, descrição, valor e tipo de pagamento, com os dados sendo armazenados de forma segura em um banco de dados **MySQL**.
+Esta API, desenvolvida utilizando **.NET 9**, adota os princípios de **Domain-Driven Design (DDD)** para oferecer uma solução estruturada e eficaz no gerenciamento de despesas pessoais. O principal objetivo é permitir que os usuários registrem suas despesas, detalhando informações como título, data e hora, descrição, valor e tipo de pagamento, com os dados sendo armazenados de forma segura em um banco de dados **MySQL**.
 
 A arquitetura da **API** baseia-se em **REST**, utilizando métodos **HTTP** padronizados para uma comunicação eficiente e simplificada. Além disso, conta com documentação via **Swagger**, que proporciona uma interface gráfica interativa para que os desenvolvedores possam explorar e testar os endpoints de maneira fácil.
 
@@ -12,3 +12,24 @@ Dentre os pacotes NuGet utilizados, o **AutoMapper** é responsável pelo mapeam
  - **Testes de Unidade**: Tesyes abrangentes com FluentAssertions para garantir a funcionalidade e a qualidade.
  - **Geração de Relatórios**: Capacidade de exportar relatórios detalhados por **PDF e Excel**, oferecendo uma análise visuale eficaz das despesas.
  - **RESTful API com Documentação Swegger**: Interface documentada que facilita a integração e o teste por parte dos desenvolvedores.
+
+ ## Getting Started
+
+ Para obter uma cópia local funcionando, siga estes passoes simples.
+
+ ### Requisitos:
+ * Visual Studio versão 2022+ ou Visual Studio Code
+ * Windows 10++ ou Linux/MacOS com [.Net SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) instaldao
+ * MySQL Server
+
+
+ ### Instalação
+
+1. Cone o repositório: 
+
+    ```sh
+    git clone https://github.com/SamuelBLuna/cashflow.git
+    ```
+
+2. Preencha as informações no arquivos `appsettings.Development.Json`.
+3. Wxecute a API e aproveite o seu teste. 😎
