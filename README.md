@@ -32,4 +32,4 @@ Dentre os pacotes NuGet utilizados, o **AutoMapper** é responsável pelo mapeam
     ```
 
 2. Preencha as informações no arquivos `appsettings.Development.Json`.
-3. Wxecute a API e aproveite o seu teste. 😎
+3. Execute a API e aproveite o seu teste. 😎
