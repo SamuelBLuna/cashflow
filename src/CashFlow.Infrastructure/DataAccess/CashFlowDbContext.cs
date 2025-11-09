@@ -9,6 +9,5 @@ internal class CashFlowDbContext : DbContext
     public CashFlowDbContext(DbContextOptions dbContext) : base(dbContext) { }
 
     public DbSet<Expense> Expenses { get; set; }
-
     
 }

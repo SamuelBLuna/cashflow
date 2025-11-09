@@ -135,4 +135,16 @@
   <data name="EXPENSE_NOT_FOUND" xml:space="preserve">
     <value>Expense not found.</value>
   </data>
+  <data name="EMAIL_EMPTY" xml:space="preserve">
+    <value>Email empty.</value>
+  </data>
+  <data name="EMAIL_INVALID" xml:space="preserve">
+    <value>Email invalid.</value>
+  </data>
+  <data name="NAME_EMPTY" xml:space="preserve">
+    <value>Name empty.</value>
+  </data>
+  <data name="INVALID_PASSWORD" xml:space="preserve">
+    <value>Votre mot de passe doit comporter au moins 8 caractères et contenir au moins une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial (!, *, #).</value>
+  </data>
 </root>
