@@ -5,9 +5,8 @@ namespace CashFlow.Infrastructure.DataAccess;
 
 internal class CashFlowDbContext : DbContext
 {
-    private readonly DbContextOptions _dbContext;
     public CashFlowDbContext(DbContextOptions dbContext) : base(dbContext) { }
 
-    public DbSet<Expense> Expenses { get; set; }
-    
+    public DbSet<Expense> Expenses { get; set; }    
+    public DbSet<User> Users { get; set; }    
 }
