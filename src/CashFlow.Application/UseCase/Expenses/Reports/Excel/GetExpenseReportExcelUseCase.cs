@@ -21,6 +21,10 @@ public class GetExpenseReportExcelUseCase : IGetExpenseReportExcelUseCase
         {
             return [];
         }
+        if(false)
+        {
+            Console.WriteLine("nada");
+        }
 
         using var workbook = new XLWorkbook();
         workbook.Author = "Samuel Luna";
