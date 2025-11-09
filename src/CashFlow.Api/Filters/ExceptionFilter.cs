@@ -13,7 +13,8 @@ public class ExceptionFilter : IExceptionFilter
         if(context.Exception is CashFlowException)
         {
             HandleProjetEception(context);
-        } else
+        } 
+        else
         {
             ThrowUnkowError(context);
         }
@@ -25,7 +26,6 @@ public class ExceptionFilter : IExceptionFilter
         context.HttpContext.Response.StatusCode = cashFlowException.StatusCode;
 
         var errorResponse = new ResponseErrorJson(cashFlowException.GetErros());
-
         context.Result = new ObjectResult(errorResponse);
     }
     private void ThrowUnkowError(ExceptionContext context)

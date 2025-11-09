@@ -2,7 +2,7 @@
 using CashFlow.Communication.Responses;
 
 namespace CashFlow.Application.UseCase.Users.Register;
-internal interface IRegisterUserUseCase
+public interface IRegisterUserUseCase
 {
     Task<ResponseRegisteredUserJson> Execute(RequestRegisterUserJson request);
 }

@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace CashFlow.Application.UseCase.Users;
 
-public class PassworValidator<T> : PropertyValidator<T, string>
+public partial class PassworValidator<T> : PropertyValidator<T, string>
 {
 
     private const string ERROR_MESSAGE = "ErrorMessage";
@@ -35,7 +35,7 @@ public class PassworValidator<T> : PropertyValidator<T, string>
             context.MessageFormatter.AppendArgument(ERROR_MESSAGE, ResourceErrorMessages.INVALID_PASSWORD);
             return false;
         }
-        if (!Regex.IsMatch(password, @"[a-z]+"))
+        if (!Teste().IsMatch(password))
         {
             context.MessageFormatter.AppendArgument(ERROR_MESSAGE, ResourceErrorMessages.INVALID_PASSWORD);
             return false;
@@ -53,4 +53,7 @@ public class PassworValidator<T> : PropertyValidator<T, string>
 
         return true;
     }
+
+    [GeneratedRegex(@"[a-z]+")]
+    private partial Regex Teste();
 }
