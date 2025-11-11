@@ -16,7 +16,7 @@ public class LoginController : ControllerBase
         [FromServices] IDoLoginUseCase useCase,
         [FromBody] RequestLoginJson request)
     {
-        var response = useCase.Execute(request);
+        var response = await useCase.Execute(request);
 
         return Ok(response);
     }

@@ -56,7 +56,7 @@ namespace CashFlow.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_Expenses", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Expenses_User_UserId",
+                        name: "FK_Expenses_Users_UserId",
                         column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "Id",
