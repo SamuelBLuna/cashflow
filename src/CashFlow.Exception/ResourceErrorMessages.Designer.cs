@@ -79,7 +79,7 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email empty.
+        ///   Looks up a localized string similar to Email cannot be empty.
         /// </summary>
         public static string EMAIL_EMPTY {
             get {

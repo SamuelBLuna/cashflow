@@ -1,4 +1,5 @@
-﻿using CashFlow.Exception;
+﻿using CashFlow.Communication.Requests;
+using CashFlow.Exception;
 using FluentValidation;
 using FluentValidation.Validators;
 using System.Text.RegularExpressions;
@@ -35,16 +36,19 @@ public partial class PassworValidator<T> : PropertyValidator<T, string>
             context.MessageFormatter.AppendArgument(ERROR_MESSAGE, ResourceErrorMessages.INVALID_PASSWORD);
             return false;
         }
+
         if (!Teste().IsMatch(password))
         {
             context.MessageFormatter.AppendArgument(ERROR_MESSAGE, ResourceErrorMessages.INVALID_PASSWORD);
             return false;
         }
+
         if (!Regex.IsMatch(password, @"[0-9]+"))
         {
             context.MessageFormatter.AppendArgument(ERROR_MESSAGE, ResourceErrorMessages.INVALID_PASSWORD);
             return false;
         }
+
         if (!Regex.IsMatch(password, @"[\!\?\*\#\.]+"))
         {
             context.MessageFormatter.AppendArgument(ERROR_MESSAGE, ResourceErrorMessages.INVALID_PASSWORD);
