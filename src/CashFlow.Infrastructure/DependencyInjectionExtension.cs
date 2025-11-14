@@ -28,7 +28,7 @@ public static class DependencyInjectionExtension
         var expirationTimeMinutes = configuration.GetValue<uint>("Settings:JWT:ExpiresMinutes");
         var signingkey = configuration.GetValue<string>("Settings:JWT:SegningKey");
 
-        services.AddScoped<IAccessTokensGeneration>(opt => new JwtTokenGenaration(expirationTimeMinutes, signingkey!));
+        services.AddScoped<IAccessTokenGenerator>(opt => new JwtTokenGenaration(expirationTimeMinutes, signingkey!));
     }
 
     private static void AddRepositories(IServiceCollection services)
