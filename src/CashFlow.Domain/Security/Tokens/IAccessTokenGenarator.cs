@@ -1,7 +1,7 @@
 ﻿using CashFlow.Domain.Entities;
 
 namespace CashFlow.Domain.Security.Tokens;
-public interface IAccessTokensGeneration
+public interface IAccessTokenGenerator
 {
     string Genarate(User user);
 }

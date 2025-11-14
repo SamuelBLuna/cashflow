@@ -11,12 +11,12 @@ public class DoLoginUseCase : IDoLoginUseCase
 {
     private readonly IUserReadOnlyRepository _repository;
     private readonly IPasswordEncripter _passwordEncripter;
-    private readonly IAccessTokensGeneration _accessTokensGeneration;
+    private readonly IAccessTokenGenerator _accessTokensGeneration;
 
     public DoLoginUseCase(
         IUserReadOnlyRepository repository,
         IPasswordEncripter passwordEncripter,
-        IAccessTokensGeneration accessTokensGeneration)
+        IAccessTokenGenerator accessTokensGeneration)
     {
         _repository = repository;
         _passwordEncripter = passwordEncripter;
